@@ -2,7 +2,7 @@ window.addEventListener('load', function(){
 const tablaPacientes = document.querySelector("#cuerpo-tabla-pacientes");
 
 const get_pacientes =()=>{
-    fetch("http://localhost:8080/paciente")
+    fetch("https://carefree-truth-production.up.railway.app/paciente")
     .then((response) => response.json())
     .then((data) => {
         console.log(data);

@@ -14,7 +14,7 @@ const capturarDatosDelOdontologoAUpdate = (id) => {
     nombre.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${nombre.name}`, e));
     apellido.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${apellido.name}`, e));
 
-    const urlApi = "http://localhost:8080";
+    const urlApi = "https://carefree-truth-production.up.railway.app";
 
     formulario.addEventListener('submit', function(event){
         event.preventDefault();
@@ -76,7 +76,7 @@ const capturarDatosDelOdontologoAUpdate = (id) => {
 }
 
 const eliminarOdontologo = (id) => {
-    const urlApi = "http://localhost:8080";
+    const urlApi = "https://carefree-truth-production.up.railway.app";
 
     Swal.fire({
         title: "Eliminar Odontólogo",

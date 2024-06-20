@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
     const tablaOdontologos = document.querySelector("#cuerpo-tabla-odontologos");
 
     const get_odontologos = () =>{
-        fetch("http://localhost:8080/odontologo")
+        fetch("https://carefree-truth-production.up.railway.app/odontologo")
         .then((response) => response.json())
         .then((data) => {
             console.log(data);

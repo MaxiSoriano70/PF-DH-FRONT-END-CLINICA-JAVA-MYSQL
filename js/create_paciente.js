@@ -18,7 +18,7 @@ window.addEventListener('load',function(){
     agregarLocalidadPaciente.addEventListener("input", e => validarTexto(e));
     agregarProvinciaPaciente.addEventListener("input", e => validarTexto(e));
 
-    const urlApi = "http://localhost:8080";
+    const urlApi = "https://carefree-truth-production.up.railway.app";
 
     agregarPaciente.addEventListener("submit", function(event){
         event.preventDefault();

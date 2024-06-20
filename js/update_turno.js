@@ -2,7 +2,7 @@ const capturarDatosPacienteUpdate =(id, idPaciente, idOdontologo)=>{
     const formularioEditarTurno = document.querySelector(`#form-editar-turno${id}`);
     const fechaDeTurnoPacienteAgregar = document.querySelector(`#fechaDeTurnoPacienteAgregar${id}`);
 
-    const urlApi = "http://localhost:8080";
+    const urlApi = "https://carefree-truth-production.up.railway.app";
 
     fechaDeTurnoPacienteAgregar.addEventListener("input", e => validarFechaDeTurno(e));
 
@@ -67,7 +67,7 @@ const capturarDatosPacienteUpdate =(id, idPaciente, idOdontologo)=>{
     };
     }
     const eliminarTurno = (id) => {
-        const urlApi = "http://localhost:8080";
+        const urlApi = "https://carefree-truth-production.up.railway.app";
 
         Swal.fire({
             title: "Eliminar Paciente",

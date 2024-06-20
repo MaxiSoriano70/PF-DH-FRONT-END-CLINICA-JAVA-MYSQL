@@ -12,7 +12,7 @@ window.addEventListener('load', function () {
     nombreAgregarOdontologo.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${nombreAgregarOdontologo.name}`, e));
     apellidoAgregarOdontologo.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${apellidoAgregarOdontologo.name}`, e));
 
-    const urlApi = "http://localhost:8080";
+    const urlApi = "https://carefree-truth-production.up.railway.app";
 
     formularioAgregarOdontologo.addEventListener('submit', function(event){
         event.preventDefault();

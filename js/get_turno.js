@@ -4,7 +4,7 @@ window.addEventListener('load', function(){
     const selectOdontologo = document.querySelector(".selectOdontologo");
 
     const get_turnos =()=>{
-        fetch("http://localhost:8080/turno")
+        fetch("https://carefree-truth-production.up.railway.app/turno")
         .then((response) => response.json())
         .then((data) => {
             console.log(data);

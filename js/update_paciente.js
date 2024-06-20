@@ -8,7 +8,7 @@ const callePacienteEditar= document.querySelector(`#callePacienteEditar${id}`);
 const numeroPacienteEditar = document.querySelector(`#numeroPacienteEditar${id}`);
 const localidadPacienteEditar = document.querySelector(`#localidadPacienteEditar${id}`);
 const provinciaPacienteEditar = document.querySelector(`#provinciaPacienteEditar${id}`);
-const urlApi = "http://localhost:8080";
+const urlApi = "https://carefree-truth-production.up.railway.app";
 
 dniUpdate.addEventListener("input", e => validarDni(e));
 nombrePacienteUpdate.addEventListener("input", e => validarTexto(e));
@@ -95,7 +95,7 @@ const realizarUpdatePaciente = (settings) => {
 };
 }
 const eliminarPaciente = (id) => {
-    const urlApi = "http://localhost:8080";
+    const urlApi = "https://carefree-truth-production.up.railway.app";
 
     Swal.fire({
         title: "Eliminar Paciente",

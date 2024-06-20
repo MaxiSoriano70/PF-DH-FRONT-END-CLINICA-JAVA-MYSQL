@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
 
     fechaDeTurnoAgregar.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${fechaDeTurnoAgregar.name}`, e));
 
-    const urlApi = "http://localhost:8080";
+    const urlApi = "https://carefree-truth-production.up.railway.app";
 
     formularioAgregarTurno.addEventListener('submit', function(event){
         event.preventDefault();
