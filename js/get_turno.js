@@ -58,7 +58,7 @@ window.addEventListener('load', function(){
     get_turnos();
 
     const get_pacientes_turnos =()=>{
-        fetch("http://localhost:8080/paciente")
+        fetch("https://carefree-truth-production.up.railway.app/paciente")
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
@@ -76,7 +76,7 @@ window.addEventListener('load', function(){
     get_pacientes_turnos();
 
     const get_odontologos_turnos = () =>{
-        fetch("http://localhost:8080/odontologo")
+        fetch("https://carefree-truth-production.up.railway.app/odontologo")
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
