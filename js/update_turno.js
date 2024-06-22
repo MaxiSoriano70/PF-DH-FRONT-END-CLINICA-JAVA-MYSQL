@@ -1,4 +1,4 @@
-const capturarDatosPacienteUpdate =(id, idPaciente, idOdontologo)=>{
+const capturarDatosTurnoUpdate =(id, idPaciente, idOdontologo)=>{
     const formularioEditarTurno = document.querySelector(`#form-editar-turno${id}`);
     const fechaDeTurnoPacienteAgregar = document.querySelector(`#fechaDeTurnoPacienteAgregar${id}`);
 
@@ -25,12 +25,12 @@ const capturarDatosPacienteUpdate =(id, idPaciente, idOdontologo)=>{
             },
         }
 
-        realizarUpdateTurno(settings);
+        realizarUpdateTurno(settings, id);
         formularioEditarTurno.reset();
     });
 
-    const realizarUpdateTurno = (settings) => {
-        fetch(`${urlApi}/turno/${id}`, settings)
+    const realizarUpdateTurno = (settings, idTurno) => {
+        fetch(`${urlApi}/turno/${idTurno}`, settings)
         .then((response) => {
             if (!response.ok) {
                 throw new Error('No se pudo actualizar el turno');

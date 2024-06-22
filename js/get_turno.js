@@ -19,7 +19,7 @@ window.addEventListener('load', function(){
                 <td>${turno.fecha}</td>
                 <td>
                     <div class="d-flex align-items-center justify-content-center">
-                        <button type="button" class="btn btn-primary mx-1 fw-bold" data-bs-toggle="modal" data-bs-target="#editarTurnoModal${turno.id}" onclick="capturarDatosPacienteUpdate(${turno.id}, ${turno.paciente.id}, ${turno.odontologo.id})""><i class="fa-solid fa-pen-to-square"></i> Editar</button>
+                        <button type="button" class="btn btn-primary mx-1 fw-bold" data-bs-toggle="modal" data-bs-target="#editarTurnoModal${turno.id}" onclick="capturarDatosTurnoUpdate(${turno.id}, ${turno.paciente.id}, ${turno.odontologo.id})""><i class="fa-solid fa-pen-to-square"></i> Editar</button>
                         <!-- Modal Editar Turno-->
                         <section class="modal fade" id="editarTurnoModal${turno.id}" tabindex="-1" aria-labelledby="editarTurnoModal${turno.id}" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">

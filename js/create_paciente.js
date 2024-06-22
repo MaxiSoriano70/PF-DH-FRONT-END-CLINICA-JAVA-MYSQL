@@ -18,6 +18,15 @@ window.addEventListener('load',function(){
     agregarLocalidadPaciente.addEventListener("input", e => validarTexto(e));
     agregarProvinciaPaciente.addEventListener("input", e => validarTexto(e));
 
+    agregarDniPaciente.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${agregarDniPaciente.name}`,e));
+    agregarNombrePaciente.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${agregarNombrePaciente.name}`,e));
+    agregarApellidoPaciente.addEventListener("blur", e => isEmpty(`Se requiere que ingrese su ${agregarApellidoPaciente.name}`,e));
+    agregarFechaDeIngresoPaciente.addEventListener("blur", e =>isEmpty (`Se requiere que ingrese su ${agregarFechaDeIngresoPaciente.name}`,e));
+    agregarCallePaciente.addEventListener("blur", e=> isEmpty(`Se requiere que ingrese su ${agregarCallePaciente.name}`,e));
+    agregarNumeroPaciente.addEventListener("blur", e=> isEmpty(`Se requiere que ingrese su ${agregarNumeroPaciente.name}`,e));
+    agregarLocalidadPaciente.addEventListener("blur", e=> isEmpty(`Se requiere que ingrese su ${agregarLocalidadPaciente.name}`,e));
+    agregarProvinciaPaciente.addEventListener("blur", e=> isEmpty(`Se requiere que ingrese su ${agregarProvinciaPaciente.name}`,e));
+
     const urlApi = "https://carefree-truth-production.up.railway.app";
 
     agregarPaciente.addEventListener("submit", function(event){

@@ -142,7 +142,7 @@ const validarCalle = (e) =>{
     let calle = capitalizarTexto(campo.value);
 
     if (calle.length < 3) {
-        setErrors(`${campo.name} inválida. Debe ser igual al campo ${dni.name}.`, campo, true);
+        setErrors(`${campo.name} inválida. Debe ser igual al campo ${calle.name}.`, campo, true);
         return false;
     } else {
         setErrors(`${campo.name} válida.`, campo, false);
