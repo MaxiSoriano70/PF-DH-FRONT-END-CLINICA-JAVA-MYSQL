@@ -1,6 +1,6 @@
 const capturarDatosTurnoUpdate =(id, idPaciente, idOdontologo)=>{
     const formularioEditarTurno = document.querySelector(`#form-editar-turno${id}`);
-    const fechaDeTurnoPacienteAgregar = document.querySelector(`#fechaDeTurnoPacienteAgregar${id}`);
+    const fechaDeTurnoPacienteAgregar = document.querySelector(`#fechaDeTurnoPacienteActualizar${id}`);
 
     const urlApi = "https://carefree-truth-production.up.railway.app";
 
@@ -70,7 +70,7 @@ const capturarDatosTurnoUpdate =(id, idPaciente, idOdontologo)=>{
         const urlApi = "https://carefree-truth-production.up.railway.app";
 
         Swal.fire({
-            title: "Eliminar Paciente",
+            title: "Eliminar Turno",
             text: "¿Estás seguro de que deseas eliminar este turno?",
             icon: "warning",
             showCancelButton: true,

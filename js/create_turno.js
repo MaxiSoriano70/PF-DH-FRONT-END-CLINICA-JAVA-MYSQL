@@ -16,7 +16,7 @@ window.addEventListener('load', function () {
         const payload = {
             paciente_id: selectPaciente.value,
             odontologo_id: selectOdontologo.value,
-            fecha: "2024-06-12"
+            fecha: fechaDeTurnoAgregar.value
         }
 
         const settings = {

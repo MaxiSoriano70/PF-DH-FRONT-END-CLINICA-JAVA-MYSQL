@@ -31,9 +31,9 @@ window.addEventListener('load', function(){
                                     <div class="modal-body bg-color-fondo">
                                         <form id="form-editar-turno${turno.id}">
                                             <div class="mb-3">
-                                                <label for="fechaDeTurnoPacienteAgregar${turno.id}" class="form-label fw-bolder">Fecha de Turno</label>
-                                                <input type="date" class="form-control bg-input" id="fechaDeTurnoPacienteAgregar${turno.id}" placeholder="Ingrese su Fecha de turno" min="1900-01-01" value="${turno.fecha}" name="Fecha de turno" required>
-                                                <div id="fechaDeTurnoPacienteAgregarError"></div>
+                                                <label for="fechaDeTurnoPacienteActualizar${turno.id}" class="form-label fw-bolder">Fecha de Turno</label>
+                                                <input type="date" class="form-control bg-input" id="fechaDeTurnoPacienteActualizar${turno.id}" placeholder="Ingrese su Fecha de turno" min="1900-01-01" value="${turno.fecha}" name="Fecha de turno" required>
+                                                <div id="fechaDeTurnoPacienteActualizarError"></div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-center">
                                                 <button type="submit" id="botonAgregarTurno" class="btn btn-personalized-2 mx-1 fw-bold" aria-label="Registrarse">Guardar cambios</button>
